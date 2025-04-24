@@ -3,6 +3,8 @@ package app;
 import static spark.Spark.*;
 
 import controladores.AutorController;
+import controladores.CategoriaController;
+import controladores.EditorialController;
 import controladores.LibroController;
 
 public class Main {
@@ -12,6 +14,10 @@ public class Main {
 
         LibroController.rutas();
         AutorController.rutas();
+        CategoriaController.rutas();
+        EditorialController.rutas();
     }
 }
+
+
 
