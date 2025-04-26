@@ -27,7 +27,7 @@ public class RepositorioLibro {
         existente.ifPresent(libro -> {
             libro.setTitulo(libroActualizado.getTitulo());
             libro.setIsbn(libroActualizado.getIsbn());
-            libro.setAnio(libroActualizado.getAnio());
+            libro.setAño(libroActualizado.getAño());
             libro.setAutor(libroActualizado.getAutor());
             libro.setEditorial(libroActualizado.getEditorial());
             libro.setCategoria(libroActualizado.getCategoria());

@@ -4,7 +4,7 @@ public class Libro {
     private int id;
     private String titulo;
     private String isbn;
-    private int anio;
+    private int año;
     private String autor;
     private String editorial;
     private String categoria;
@@ -16,8 +16,8 @@ public class Libro {
     public void setTitulo(String titulo) { this.titulo = titulo; }
     public String getIsbn() { return isbn; }
     public void setIsbn(String isbn) { this.isbn = isbn; }
-    public int getAnio() { return anio; }
-    public void setAnio(int anio) { this.anio = anio; }
+    public int getAño() { return año; }
+    public void setAño(int año) { this.año = año; }
     public String getAutor() { return autor; }
     public void setAutor(String autor) { this.autor = autor; }
     public String getEditorial() { return editorial; }
