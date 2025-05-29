@@ -1,5 +1,6 @@
 package app;
 
+import controllers.AutorController;
 import controllers.BookController;
 import controllers.UserController;
 import io.javalin.Javalin;
@@ -12,7 +13,7 @@ public class Main {
 
         BookController.configureRoutes(app);
         UserController.configureRoutes(app);
-
+        AutorController.configureRoutes(app);
 
 
 
