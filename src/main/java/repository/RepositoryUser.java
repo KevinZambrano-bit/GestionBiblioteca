@@ -6,11 +6,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class RepositoryUser {
     private static final List<User> users = Collections.synchronizedList(new ArrayList<>());
-    private static final AtomicInteger autoId = new AtomicInteger();
+    private static final AtomicInteger autoId = new AtomicInteger(1);
 
     //Get all the books
     public static List<User> getALL() {
-        return  new ArrayList<>(users);
+        return new ArrayList<>(users);
     }
 
     //Get book by ID

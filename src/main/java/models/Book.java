@@ -11,17 +11,6 @@ public class Book {
 
     public Book() {}
 
-//    public Book(int id, String title, String author, String editorial, String category, int yearPublication, boolean available) {
-//        this.id = id;
-//        this.title = title;
-//        this.author = author;
-//        this.editorial = editorial;
-//        this.category = category;
-//        this.yearPublication = yearPublication;
-//        this.available = available;
-//
-//    }
-
     //Getters and Setters
     public int getId() {
         return id;

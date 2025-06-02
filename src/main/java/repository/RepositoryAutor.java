@@ -5,7 +5,7 @@ import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 public class RepositoryAutor {
     private static final List<Autor> autores = Collections.synchronizedList(new ArrayList<>());
-    private static final AtomicInteger autoId = new AtomicInteger();
+    private static final AtomicInteger autoId = new AtomicInteger(1);
     public static List<Autor> getALL() {
         return new ArrayList<>(autores);
     }

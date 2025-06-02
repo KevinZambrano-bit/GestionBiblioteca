@@ -42,7 +42,7 @@ public class UserController {
             int id = Integer.parseInt(ctx.pathParam("id"));
             boolean userDelete = repository.RepositoryUser.deleteUser(id);
             if (userDelete) {
-                ctx.status(204);
+                ctx.status(202).result("Deleted user ");
             } else {
                 ctx.status(404).result("User no found");
             }

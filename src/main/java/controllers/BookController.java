@@ -42,7 +42,7 @@ public class BookController {
             int id = Integer.parseInt(ctx.pathParam("id"));
             boolean bookDelete = repository.RepositoryBook.deleteBook(id);
             if(bookDelete) {
-                ctx.status(204);
+                ctx.status(202).result("Deleted book");
             } else {
                 ctx.status(404).result("Book no found");
             }

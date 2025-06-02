@@ -35,7 +35,7 @@ public class AutorController {
             int id = Integer.parseInt(ctx.pathParam("id"));
             boolean deleted = RepositoryAutor.deleteAutor(id);
             if (deleted) {
-                ctx.status(204); // No Content
+                ctx.status(202).result("Autor eliminado");
             } else {
                 ctx.status(404).result("Autor no encontrado");
             }

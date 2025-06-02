@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class RepositoryBook {
     private static final List<Book> books = Collections.synchronizedList(new ArrayList<>());
-    private static final AtomicInteger autoId = new AtomicInteger();
+    private static final AtomicInteger autoId = new AtomicInteger(1);
 
     //Get all the books
     public static List<Book> getALL() {

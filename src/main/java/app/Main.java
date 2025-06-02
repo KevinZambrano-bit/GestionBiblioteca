@@ -1,8 +1,6 @@
 package app;
 
-import controllers.AutorController;
-import controllers.BookController;
-import controllers.UserController;
+import controllers.*;
 import io.javalin.Javalin;
 
 public class Main {
@@ -14,6 +12,8 @@ public class Main {
         BookController.configureRoutes(app);
         UserController.configureRoutes(app);
         AutorController.configureRoutes(app);
+        PrestamoController.configureRoutes(app);
+        CategoriaController.configureRoutes(app);
 
 
 

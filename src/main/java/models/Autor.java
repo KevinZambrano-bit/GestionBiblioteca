@@ -3,7 +3,9 @@ public class Autor {
     private int id;
     private String name;
     private String nationality;
+
     public Autor() {}
+
     // Getters and Setters
     public int getId() {
         return id;
