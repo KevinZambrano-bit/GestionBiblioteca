@@ -14,6 +14,8 @@ public class Main {
         AutorController.configureRoutes(app);
         PrestamoController.configureRoutes(app);
         CategoriaController.configureRoutes(app);
+        EditorialController.configureRoutes(app);
+        ResenaController.configureRoutes(app);
 
 
 
